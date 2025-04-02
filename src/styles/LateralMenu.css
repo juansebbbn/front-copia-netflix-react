@@ -1,0 +1,21 @@
+.lateral-menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.menu-item img{
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.active{
+    font-weight: bold;
+    color: #E50914;
+}

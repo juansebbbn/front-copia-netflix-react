@@ -1,0 +1,64 @@
+.movie-list::-webkit-scrollbar {
+    display: none;
+}
+
+.container-list {
+    position: relative;
+    padding: 5px;
+}
+
+.custom-prev,
+.custom-next {
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 20; /* Asegura que estén por encima del slider */
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-prev {
+    left: 0; /* Ajusta según sea necesario */
+}
+
+.custom-next {
+    right: 0; /* Ajusta según sea necesario */
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+    background-color: rgba(147, 26, 26, 0.8);
+}
+
+.custom-prev::after,
+.custom-next::after {
+    font-size: 15px;
+}
+
+.movie-list {
+    width: 100%;
+    overflow: visible !important;  /* Permite que las cards sobresalgan */
+    padding: 10px 0;
+}
+
+.movie-slide {
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    overflow: visible !important; /* Hace que el hover no se corte */
+}
+
+.titulolist{
+    margin: 0px 0px 0px 6px;
+    font-size: 15px;
+
+}

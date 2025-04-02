@@ -1,0 +1,59 @@
+footer {
+    margin-top: 60px;
+    cursor: pointer;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes img {
+    width: 22px;
+    height: 100%;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.redes img:hover {
+    transform: scale(1.1);
+}
+
+.youtube {
+    margin-top: 20px !important;
+    width: 28px !important;
+    height: 100% !important;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #dbdbdb;
+}
+
+
+.links-container h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+
+.links {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.links div {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
+    margin: 0px 20px 0px 20px;
+}
+
+.links p:hover {
+    color: #989898;
+}

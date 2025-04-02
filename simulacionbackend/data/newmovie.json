@@ -1,0 +1,13 @@
+[
+    {
+        "id": 16,
+        "title": "Back to the Future",
+        "image": "/assets/NewMovie/pelipromocion.jpg",
+        "duration": "1h 26m",
+        "logo": "/assets/NewMovie/fotostarwars.png",
+        "genres": ["Sci-Fi", "Adventure"],
+        "isFavorite": true,
+        "isResumeAvailable": false,
+        "porcentaje": 35
+      }
+]

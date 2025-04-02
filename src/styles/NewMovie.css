@@ -1,0 +1,67 @@
+.body{
+    position: relative;
+    height: 500px;
+    width: 100%;    
+}
+
+.newMovie{
+    height: 100%;
+    width: 100%;
+}
+
+.logo{
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+}
+
+.buttons{
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+    display: flex;
+}
+
+.buttons button{
+    height: 40px;
+    padding: 2px;
+    margin: 0px 5px 0px 5px;
+    border-radius: 5px;
+    border-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.buttons img{
+    margin-right: 5px;
+    width: 23px;
+    height: auto;
+}
+
+.buttonplay{
+   width: 150px;
+   background-color: #dbdbdb;
+}
+
+.buttonplay:hover{
+    background-color: #b3b1b1;
+}
+ 
+.masinfo{
+    width: 180px;
+    background-color: #424242;
+    opacity: 0.8;
+    color: #dbdbdb;
+}
+
+.masinfo:hover{
+    background-color: #272727;
+}
+ 
+
+
+
+

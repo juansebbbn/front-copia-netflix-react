@@ -1,0 +1,179 @@
+[
+    {
+      "id": 1,
+      "title": "Back to the Future",
+      "image": "/assets/NewMovie/pelipromocion.jpg",
+      "duration": "1h 26m",
+      "logo": "/assets/NewMovie/fotostarwars.png",
+      "genres": ["Sci-Fi", "Adventure"],
+      "isFavorite": true,
+      "isResumeAvailable": true,
+      "porcentaje": 35
+    },
+    {
+      "id": 2,
+      "title": "Back to the Future",
+      "image": "/assets/NewMovie/pelipromocion.jpg",
+      "duration": "1h 26m",
+      "logo": "/assets/NewMovie/fotostarwars.png",
+      "genres": ["Sci-Fi", "Adventure"],
+      "isFavorite": true,
+      "isResumeAvailable": true,
+      "porcentaje": 35
+    },
+    {
+      "id": 3,
+      "title": "Back to the Future",
+      "image": "/assets/NewMovie/pelipromocion.jpg",
+      "duration": "1h 26m",
+      "logo": "/assets/NewMovie/fotostarwars.png",
+      "genres": ["Sci-Fi", "Adventure"],
+      "isFavorite": true,
+      "isResumeAvailable": true,
+      "porcentaje": 35
+    },
+    {
+      "id": 4,
+      "title": "Back to the Future",
+      "image": "/assets/NewMovie/pelipromocion.jpg",
+      "duration": "1h 26m",
+      "logo": "/assets/NewMovie/fotostarwars.png",
+      "genres": ["Sci-Fi", "Adventure"],
+      "isFavorite": true,
+      "isResumeAvailable": true,
+      "porcentaje": 35
+    },
+    {
+      "id": 5,
+      "title": "Back to the Future",
+      "image": "/assets/NewMovie/pelipromocion.jpg",
+      "duration": "1h 26m",
+      "logo": "/assets/NewMovie/fotostarwars.png",
+      "genres": ["Sci-Fi", "Adventure"],
+      "isFavorite": true,
+      "isResumeAvailable": true,
+      "porcentaje": 35
+    },
+    {
+      "id": 6,
+      "title": "Back to the Future",
+      "image": "/assets/NewMovie/pelipromocion.jpg",
+      "duration": "1h 26m",
+      "logo": "/assets/NewMovie/fotostarwars.png",
+      "genres": ["Sci-Fi", "Adventure"],
+      "isFavorite": true,
+      "isResumeAvailable": true,
+      "porcentaje": 35
+    },
+    {
+      "id": 7,
+      "title": "Back to the Future",
+      "image": "/assets/NewMovie/pelipromocion.jpg",
+      "duration": "1h 26m",
+      "logo": "/assets/NewMovie/fotostarwars.png",
+      "genres": ["Sci-Fi", "Adventure"],
+      "isFavorite": true,
+      "isResumeAvailable": true,
+      "porcentaje": 35
+    },
+    {
+      "id": 8,
+      "title": "Back to the Future",
+      "image": "/assets/NewMovie/pelipromocion.jpg",
+      "duration": "1h 26m",
+      "logo": "/assets/NewMovie/fotostarwars.png",
+      "genres": ["Sci-Fi", "Adventure"],
+      "isFavorite": true,
+      "isResumeAvailable": true,
+      "porcentaje": 35
+    },
+    {
+      "id": 9,
+      "title": "Back to the Future",
+      "image": "/assets/NewMovie/pelipromocion.jpg",
+      "duration": "1h 26m",
+      "logo": "/assets/NewMovie/fotostarwars.png",
+      "genres": ["Sci-Fi", "Adventure"],
+      "isFavorite": true,
+      "isResumeAvailable": true,
+      "porcentaje": 35
+    },
+    {
+      "id": 10,
+      "title": "Back to the Future",
+      "image": "/assets/NewMovie/pelipromocion.jpg",
+      "duration": "1h 26m",
+      "logo": "/assets/NewMovie/fotostarwars.png",
+      "genres": ["Sci-Fi", "Adventure"],
+      "isFavorite": true,
+      "isResumeAvailable": false,
+      "porcentaje": 35
+    },
+    {
+      "id": 11,
+      "title": "Back to the Future",
+      "image": "/assets/NewMovie/pelipromocion.jpg",
+      "duration": "1h 26m",
+      "logo": "/assets/NewMovie/fotostarwars.png",
+      "genres": ["Sci-Fi", "Adventure"],
+      "isFavorite": true,
+      "isResumeAvailable": false,
+      "porcentaje": 35
+    },
+    {
+      "id": 12,
+      "title": "Back to the Future",
+      "image": "/assets/NewMovie/pelipromocion.jpg",
+      "duration": "1h 26m",
+      "logo": "/assets/NewMovie/fotostarwars.png",
+      "genres": ["Sci-Fi", "Adventure"],
+      "isFavorite": true,
+      "isResumeAvailable": false,
+      "porcentaje": 35
+    },
+    {
+      "id": 13,
+      "title": "Back to the Future",
+      "image": "/assets/NewMovie/pelipromocion.jpg",
+      "duration": "1h 26m",
+      "logo": "/assets/NewMovie/fotostarwars.png",
+      "genres": ["Sci-Fi", "Adventure"],
+      "isFavorite": true,
+      "isResumeAvailable": false,
+      "porcentaje": 35
+    },
+    {
+      "id": 14,
+      "title": "Back to the Future",
+      "image": "/assets/NewMovie/pelipromocion.jpg",
+      "duration": "1h 26m",
+      "logo": "/assets/NewMovie/fotostarwars.png",
+      "genres": ["Sci-Fi", "Adventure"],
+      "isFavorite": true,
+      "isResumeAvailable": false,
+      "porcentaje": 35
+    },
+    {
+      "id": 15,
+      "title": "Back to the Future",
+      "image": "/assets/NewMovie/pelipromocion.jpg",
+      "duration": "1h 26m",
+      "logo": "/assets/NewMovie/fotostarwars.png",
+      "genres": ["Sci-Fi", "Adventure"],
+      "isFavorite": true,
+      "isResumeAvailable": false,
+      "porcentaje": 35
+    },
+    {
+      "id": 16,
+      "title": "Back to the Future",
+      "image": "/assets/NewMovie/pelipromocion.jpg",
+      "duration": "1h 26m",
+      "logo": "/assets/NewMovie/fotostarwars.png",
+      "genres": ["Sci-Fi", "Adventure"],
+      "isFavorite": true,
+      "isResumeAvailable": false,
+      "porcentaje": 35
+    }
+  ]
+  

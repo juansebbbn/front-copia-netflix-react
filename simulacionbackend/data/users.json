@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "nombre": "Marta Maria",
+        "imagen": "/assets/NavBar/user2.png"
+    },
+    {
+        "id": 2,
+        "nombre": "Fernando Badone",
+        "imagen": "/assets/NavBar/user3.png"
+    },
+    {
+        "id": 3,
+        "nombre": "Leonardo Delfino",
+        "imagen": "/assets/NavBar/user4.png"
+    },
+    {
+        "id": 4,
+        "nombre": "Horacio Delfino",
+        "imagen": "/assets/NavBar/user4.png"
+    }
+]

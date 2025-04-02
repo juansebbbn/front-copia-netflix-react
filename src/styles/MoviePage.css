@@ -1,0 +1,31 @@
+.movie-page {
+    color: #dbdbdb;
+}
+
+.movie-info {
+    width: 500px;
+    margin-left: 50px;
+}
+
+.movie-info h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.list-container {
+    margin: 10px 0px 10px 0px;
+}
+
+.list-container img {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+}
+
+.list-container img:hover {
+    filter: brightness(0.5);
+}
+
+.list-container p {
+    margin: 0px;
+}

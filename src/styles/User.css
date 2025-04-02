@@ -1,0 +1,86 @@
+.container-cuenta{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 50px 0px;
+}
+
+.infocuenta{
+    margin-left: 190px;
+}
+
+.cuenta_c {
+    margin-right: 100px;
+}
+
+.cuenta_c h1 {
+    color: #dbdbdb;
+    margin: 10px 0px 10px 0px;
+    font-size: 19px;
+}
+
+.cuenta_c h2 {
+    color: #dbdbdb;
+    margin: 10px 0px 10px 0px;
+    font-size: 14px;
+}
+
+.infocuenta_c {
+    color: #dbdbdb;
+    width: 520px;
+    height: 200px;
+    border-radius: 5px;
+    border: 0.3px solid rgb(99, 99, 99);
+    padding: 10px;
+    background-color: #131313;
+}
+
+.desde_c {
+    background-color: red;
+    width: 200px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: -10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.visa_cp{
+    display: flex;
+    align-items: center;
+}
+
+.visa_cp img{
+    width: 47px;
+    height: auto;
+    margin-right: 8px;
+}
+
+.vinculos-container_c {
+    margin-top: 30px;
+}
+
+.vinculos-container_c h2 {
+    margin-bottom: 10px;
+    color: #dbdbdb;
+    font-size: 19px;
+}
+
+.vinculos_c {
+    display: flex;
+    flex-direction: column;
+    width: 520px;
+    height: 480px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 0.3px solid rgb(99, 99, 99);
+    background-color: #131313;
+    color: #dbdbdb;
+}
+
+.vinculos_c a {
+    text-decoration: none;
+    border-bottom: 0.3px solid rgb(99, 99, 99);
+    margin: 20px 5px 20px 5px;
+    font-weight: bold;
+}

@@ -1,0 +1,120 @@
+a{
+    color: #dbdbdb;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+a:hover{
+    color: #9e9e9e;
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    width: 100% ;
+    height: 70px;
+}
+
+.navBar img{
+    cursor: pointer;
+}
+
+.navIzq{
+    display: flex;
+    align-items: center;
+}
+
+.navIzq *{
+    margin: 0px 25px 0px 25px;
+}
+
+.logonav{
+    width: 100px;
+    height: auto;
+}
+
+.navDer{
+    display: flex;
+    align-items: center;
+}
+
+.icon-nav{
+    width: 25px;
+    height: auto;
+    margin: 0px 20px 0px 20px;
+}
+
+.flecha{
+    width: 10px;
+    height: auto;
+    margin-left: -20px;
+    margin-right: 20px;
+}
+
+/*busqueda*/
+
+.contenedor-lupa{
+    display: flex;
+    align-items: center;
+}
+
+.input-buscar{
+    display: none;
+}
+
+.input-buscar.active{
+    display: flex;
+    height: 15px;
+    padding: 10px;
+    border-radius: 7px;
+    border-style: none;
+}
+
+/*menu user*/
+
+.contenedor-icono{
+    display: flex;
+    align-items: center;
+}
+
+.menu-nav{
+    display: flex;
+    flex-direction: column;
+    right: 16px;
+    top: 65px;
+    align-items: center;
+    position: absolute;
+    width: 210px;
+    height: 465px;
+    color: #dbdbdb;
+    background-color: #131313;
+    padding: 14px;
+    border-radius: 3px;
+    z-index: 50;
+    text-align: center;
+}
+
+.menu-nav div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px;
+    padding: 2px;
+}
+
+.menu-nav img{
+    width: 15px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.menu-footer{
+    border-bottom: #dbdbdb 1px solid;
+    font-weight: bold;
+    display: flex !important;
+    justify-content: center!important;
+    padding-bottom: 10px!important;
+}

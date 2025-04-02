@@ -1,0 +1,109 @@
+h1, h2, h3{
+    color: #dbdbdb;
+}
+
+.container-cuenta{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 50px 0px;
+}
+
+.containerderecha{
+    margin-left: 270px;
+}
+
+.plancontainer_p{
+    margin-right: 100px;
+}
+
+.infoplan_p {
+    width: 420px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 0.3px solid rgb(203, 203, 203);
+    padding: 20px;
+    background-color: #131313;
+    justify-content: space-between;
+}
+
+.plancontainer_p h2 {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.plancontainer_p h1 {
+    font-size: 18px;
+}
+
+.plancontainer_p a{
+    margin: 20px 0px 0px 0px;
+}
+
+.plancontainer_p img{
+    width: 30px;
+    height: auto;
+}
+
+.plan_p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.6px solid rgb(148, 148, 148);
+    height: 65px;
+}
+
+.plan_p h3 {
+    margin: 10px 0px 10px 0px;
+    color: #dbdbdb;
+    font-size: 16px;
+}
+
+
+.informaciondepago_p {
+    width: 420px;
+    height: 377px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 0.3px solid rgb(203, 203, 203);
+    padding: 20px;
+    background-color: #131313;
+
+}
+
+.containerpago_p {
+    display: flex;
+    width: 420px;
+    justify-content: space-between;
+    border-bottom: 0.6px solid rgb(148, 148, 148);
+    align-items: center;
+    color: #dbdbdb;
+}
+
+
+.containerpago_p img {
+    width: 30px;
+    height: auto;
+}
+
+
+.containerpago_p h2 {
+    font-size: 20px;
+    color: #dbdbdb;
+}
+
+
+.containerpago_p p {
+    margin: 5px 0px 5px 0px;
+}
+
+.item_p {
+    padding: 25px 0px 25px 0px;
+    border-bottom: 0.6px solid rgb(150, 150, 150);
+    width: 420px;
+}
