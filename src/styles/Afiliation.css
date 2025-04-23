@@ -107,3 +107,8 @@ h1, h2, h3{
     border-bottom: 0.6px solid rgb(150, 150, 150);
     width: 420px;
 }
+
+.activePlan{
+    background-color: #1f1f1f;
+    border-radius: 5px;
+}

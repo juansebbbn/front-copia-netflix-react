@@ -1,31 +1,36 @@
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { getUsers } from "/src/services/servicesapi.js"; // Importamos la función desde el servicio
+import { getProfiles } from "/src/services/servicesapi.js"; 
 import "/src/styles/NavBar.css";
 
 function NavBar() {
-  const [menuAbierto, setMenuAbierto] = useState(false);
-  const [busquedaActiva, setBusquedaActiva] = useState(false);
-  const [usuarios, setUsuarios] = useState([]);
+  const [openMenu, setopenMenu] = useState(false);
+  const [activeSearch, setactiveSearch] = useState(false);
+  const [users, setusers] = useState([]);
   const menuRef = useRef(null);
 
   useEffect(() => {
-    const fetchUsuarios = async () => {
-      const data = await getUsers(); // Llamamos a la función del servicio
-      if (data) setUsuarios(data);
+    const fetchusers = async () => {
+      const data = await getProfiles(); 
+
+      console.log("(COMPONENT) users:", data);
+
+      if (data && !data.error) {
+        setusers(data);
+      }
     };
 
-    fetchUsuarios();
-  }, []);
+    fetchusers();
+  }, []); // getting the users from the api
 
   function toggleMenu() {
-    setMenuAbierto(!menuAbierto);
+    setopenMenu(!openMenu);
   }
 
   useEffect(() => {
     function handleClickOutside(event) {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
-        setMenuAbierto(false);
+        setopenMenu(false);
       }
     }
     document.addEventListener("click", handleClickOutside);
@@ -47,11 +52,11 @@ function NavBar() {
             src="/assets/NavBar/search.png"
             alt="Buscar"
             className="busqueda icon-nav"
-            onClick={() => setBusquedaActiva(!busquedaActiva)}
+            onClick={() => setactiveSearch(!activeSearch)}
           />
           <input
             type="text"
-            className={`input-buscar ${busquedaActiva ? "active" : ""}`}
+            className={`input-buscar ${activeSearch ? "active" : ""}`}
             placeholder="Títulos, personas, géneros"
           />
         </div>
@@ -73,16 +78,15 @@ function NavBar() {
               src="/assets/NavBar/down.png"
               alt="Flecha"
               className="flecha"
-              style={{ transform: menuAbierto ? "rotate(180deg)" : "rotate(0deg)" }}
+              style={{ transform: openMenu ? "rotate(180deg)" : "rotate(0deg)" }}
             />
           </div>
 
-          {menuAbierto && (
+          {openMenu && (
             <div className="menu-nav">
-              {usuarios.map((usuario) => (
+              {users.map((usuario) => (
                 <div className="menu-item" key={usuario.id}>
-                  <img src={usuario.imagen} alt={usuario.nombre} />
-                  <Link to="/perfil">{usuario.nombre}</Link>
+                  <Link to="/perfil">{usuario.profileName}</Link>
                 </div>
               ))}
               <div className="menu-item">

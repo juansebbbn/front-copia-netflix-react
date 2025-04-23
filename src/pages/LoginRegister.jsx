@@ -1,9 +1,44 @@
 import { useState } from "react";
 import "/src/styles/LoginRegister.css";
-import { Link } from 'react-router-dom';
+import { login } from "/src/services/servicesapi.js";
+import { register } from "/src/services/servicesapi.js";
 
 const LoginRegister = () => {
     const [isLogin, setIsLogin] = useState(true);
+
+    const [username, setUser] = useState("");
+    const [password, setPassword] = useState("");
+
+    const [name, setName] = useState("");
+    const [lastname, setLastname] = useState("");
+    const [country, setCountry] = useState("");
+    
+    const handleLogin = async () => {
+        try {
+            const data = await login({ username, password });
+    
+            if (!data || !data.token) throw new Error("Login failed");
+    
+            console.log("Successful login:", data);
+            window.location.replace("/home");
+        } catch (err) {
+            console.error("Login error:", err.message);
+        }
+    };
+
+    const handleRegister = async () => {
+        try {
+            const data = await register({ username, password, name, lastname, country});
+    
+            if (!data || !data.token) throw new Error("Registration failed");
+    
+            console.log("Successful registration:", data);
+            window.location.replace("/home");
+        } catch (err) {
+            console.error("Registration error:", err.message);
+        }
+    }
+    
 
     return (
         <div className="bodylogin">
@@ -26,21 +61,21 @@ const LoginRegister = () => {
                     </div>
 
                     {isLogin ? (
-                        <form id="loginForm">
-                            <input type="text" placeholder="Usuario" required />
-                            <input type="password" placeholder="Contraseña" required />
+                        <form id="loginForm" onSubmit={(e) => { e.preventDefault(); handleLogin(); }}>
+                            <input type="text" placeholder="Nombre de usuario" onChange={(e) => setUser(e.target.value)} />
+                            <input type="password" placeholder="Contrasenia" onChange={(e) => setPassword(e.target.value)} />
                             <a href="#">¿Olvidaste tu contraseña?</a>
-                            <button type="submit">
-                                <Link to="/">Login</Link>
-                            </button>
+                            <button type="submit">Login</button>
                         </form>
                     ) : (
-                        <form id="registerForm">
-                            <input type="text" placeholder="Usuario" required />
-                            <input type="email" placeholder="Correo electrónico" required />
-                            <input type="password" placeholder="Contraseña" required />
-                            <button type="submit">
-                                <Link to="/">Registrase</Link>
+                        <form id="registerForm" onSubmit={(e) => { e.preventDefault(); handleRegister(); }}>
+                            <input type="text" placeholder="Nombre de usuario" required onChange={(e) => setUser(e.target.value)} />
+                            <input type="password" placeholder="Contraseña" required  onChange={(e) => setPassword(e.target.value)} />
+                            <input type="text" required placeholder="Nombre" onChange={(e) => setName(e.target.value)} />
+                            <input type="text" required placeholder="Apellido" onChange={(e) => setLastname(e.target.value)} />
+                            <input type="text" required placeholder="Pais" onChange={(e) => setCountry(e.target.value)} />
+                            <button type="submit" >
+                                Registrarse
                             </button>
                         </form>
                     )}

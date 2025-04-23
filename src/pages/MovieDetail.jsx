@@ -1,46 +1,32 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { getMovieDetail } from "/src/services/servicesapi.js"; 
 import NavBar from "../components/general/NavBar";
 import NewMovie from "../components/home/NewMovie";
-import MovieListNormal from "../components/home/MovieListNormal";
+import MovieList from "../components/home/MovieList";
 import Footer from "../components/general/Footer";
-import { getMovieDetail } from "/src/services/servicesapi.js"; // Importamos el servicio
 import "/src/styles/MoviePage.css";
 
 function MoviePage() {
-  const { id } = useParams(); // Obtiene el ID de la película desde la URL
-  const [movie, setMovie] = useState(null);
-  const [error, setError] = useState(null);
+  const { id } = useParams(); // getId from the url
+  const [movie, setMovie] = useState(null); // state for the movie details
+
+
+  async function fetchMovie() {
+    try {
+      const data = await getMovieDetail(id); // call the service to get the movie details
+      console.log("Movie found:", data);
+      setMovie(data); // update the state with the movie details
+    } catch (error) {
+      console.error("Error while fetching movie:", error);
+    }
+  }
 
   useEffect(() => {
-    let isMounted = true;
+    fetchMovie(); // call the function to fetch the movie details
+  }
+  , []);
 
-    const fetchMovie = async () => {
-      try {
-        const data = await getMovieDetail(id);
-        console.log("Película obtenida:", data);
-
-        if (isMounted) {
-          if (!data || data.error) {
-            setError("Película no encontrada");
-          } else {
-            setMovie(data);
-          }
-        }
-      } catch (error) {
-        if (isMounted) setError("Error al cargar la película");
-      }
-    };
-
-    fetchMovie();
-
-    return () => {
-      isMounted = false;
-    };
-  }, [id]);
-
-  if (error) return <div className="error-message">{error}</div>;
-  if (!movie) return <div className="loading">Cargando...</div>;
 
   return (
     <div className="movie-page">
@@ -54,10 +40,11 @@ function MoviePage() {
             <img src="/public/assets/card/add (3).png" alt="add" />
             <p>Mi lista</p>
           </div>
-          <p className="movie-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum praesentium quibusdam, assumenda animi amet, inventore ex officiis error aperiam, non illo corrupti
-            et tempora sed nesciunt fugit velit neque harum!</p>
+          <p className="movie-description">
+            {movie.description}
+          </p>
         </div>
-        <MovieListNormal title={"Quizas te guste"}/>
+        <MovieList title={"Quizas te guste"}/>
       </div>
       <Footer />
     </div>
