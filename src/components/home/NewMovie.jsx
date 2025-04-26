@@ -5,8 +5,8 @@ const NewMovie = ({ pelicula }) => {
 
     return (
         <div className="body">
-            <img src={pelicula.image} alt={pelicula.titulo} className="newMovie"/>
-            <img src={pelicula.logo} alt="logo" className="logo"/>
+            <img src={pelicula.url_img} alt={pelicula.titulo} className="newMovie"/>
+            <img src={pelicula.url_logo} alt="logo" className="logo"/>
             <div className="buttons">
                 <button className="buttonplay">
                     <img src="/assets/NewMovie/play-button-arrowhead (1).png" alt="Play" />

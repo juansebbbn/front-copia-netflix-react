@@ -109,6 +109,11 @@ h1, h2, h3{
 }
 
 .activePlan{
-    background-color: #1f1f1f;
+    display: flex;
+}
+
+.inactivePLan{
+    display: none;
+    color: red;
     border-radius: 5px;
 }

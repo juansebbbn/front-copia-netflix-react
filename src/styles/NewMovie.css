@@ -1,6 +1,6 @@
 .body{
     position: relative;
-    height: 500px;
+    height: 600px;
     width: 100%;    
 }
 
@@ -11,14 +11,15 @@
 
 .logo{
     position: absolute;
-    bottom: 40px;
-    left: 30px;
+    bottom: 100px;
+    left: 10px;
+    width: 500px;
 }
 
 .buttons{
     position: absolute;
     bottom: 40px;
-    left: 30px;
+    left: 60px;
     display: flex;
 }
 

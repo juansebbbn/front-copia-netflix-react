@@ -3,16 +3,15 @@ import Footer from "../components/general/Footer";
 import LateralMenu from "../components/user/LateralMenu";
 import "/src/styles/User.css";
 import { useEffect, useState } from "react";
-import { fetchUser } from "/src/services/servicesapi.js"; 
+import { fetchUser, getPayments} from "/src/services/servicesapi.js"; 
 
 function User() {
   const [user, setUser] = useState(null); // state to store user data
 
   useEffect(() => {
     const getUser = async () => {
-      console.log("test")
       try {
-        const data = await fetchUser();
+        const data = await getPayments();
         console.log("(COMPONENT) user data:", data);
 
         if (data && !data.error) {

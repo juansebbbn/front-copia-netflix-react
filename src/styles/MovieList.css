@@ -49,6 +49,7 @@
     width: 100%;
     overflow: visible !important;  /* Permite que las cards sobresalgan */
     padding: 10px 0;
+    margin-left: 50px;
 }
 
 .movie-slide {

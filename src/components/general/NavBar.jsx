@@ -10,7 +10,7 @@ function NavBar() {
   const menuRef = useRef(null);
 
   useEffect(() => {
-    const fetchusers = async () => {
+    const fetchProfiles = async () => {
       const data = await getProfiles(); 
 
       console.log("(COMPONENT) users:", data);
@@ -20,7 +20,7 @@ function NavBar() {
       }
     };
 
-    fetchusers();
+    fetchProfiles();
   }, []); // getting the users from the api
 
   function toggleMenu() {
@@ -41,7 +41,7 @@ function NavBar() {
     <nav className="navBar">
       <div className="navIzq">
         <img src="/assets/NavBar/netflix.png" alt="logo" className="logonav" />
-        <Link to="/">Inicio</Link>
+        <Link to="/home">Inicio</Link>
         <Link to="/peliculas">Películas</Link>
         <Link to="/series">Series</Link>
       </div>
@@ -86,6 +86,7 @@ function NavBar() {
             <div className="menu-nav">
               {users.map((usuario) => (
                 <div className="menu-item" key={usuario.id}>
+                  <img src="public\assets\NavBar\user3.png" alt="Usuario" />
                   <Link to="/perfil">{usuario.profileName}</Link>
                 </div>
               ))}

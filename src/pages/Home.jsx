@@ -13,6 +13,13 @@ function Home() {
   const [startedMovies, setStartedMovies] = useState([]);  
   const byGenre = sortByGenre();
 
+  const styles = {
+    marginLeft: '58px',
+    fontSize: '18px',
+    marginTop: '10px',
+    marginBottom: '-5px',
+  };
+
   //the next three functions are used to get the movies from the api
 
   useEffect(() => {
@@ -39,11 +46,11 @@ function Home() {
         const data = await getNewMovie();
         console.log("(COMPONENT) premier movie:", data);
 
-        if (isMounted && data && !data.error) {
+        if (!data.error) {
           setMovie(data);
         }
       } catch (error) {
-        console.log("(COMPONENT) error fetching movie:");
+        console.log("(COMPONENT) error fetching movie:", error);
       }
     };
 
@@ -95,16 +102,15 @@ function Home() {
         <NavBar />
         <NewMovie pelicula={moviePremiere} />
 
-        <h2>Reanudar</h2>
+        <h2 style={styles}>Reanudar</h2>
         <MovieList movies={startedMovies} />
 
         {Object.entries(byGenre).map(([genre, movies]) => ( // Use Object.entries to iterate over key-value pairs
           <div key={genre}>
-            <h2>{genre}</h2>
+            <h2 style={styles}>{genre}</h2>
             <MovieList movies={movies} /> {/* Access the movies array directly */}
           </div>
         ))}
-        <MovieList movies={allMovies} />
 
         <Footer />
       </div>

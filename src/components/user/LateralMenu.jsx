@@ -8,7 +8,7 @@ function LateralMenu() {
         <div className="lateral-menu">
             <div className="menu-item">
                 <img src="/assets/User/back.png" alt="" />
-                <Link to="/" className={location.pathname === "/" ? "active" : ""}>
+                <Link to="/home" className={location.pathname === "/" ? "active" : ""}>
                     Volver a Netflix
                 </Link>
             </div>
